@@ -34,6 +34,19 @@ main :: IO ()
 main = do
   putStrLn "hello world"
 
+{-# START_FILE stack.yaml #-}
+resolver: lts-16.0
+
+allow-newer: false
+
+packages:
+- .
+
+extra-deps:
+- git: git://github.com/reanimate/reanimate.git
+  commit: 6b3e7a16b8be3f66ca0227caca5bd8b96b05532c
+
+
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2019{{/year}}
 
