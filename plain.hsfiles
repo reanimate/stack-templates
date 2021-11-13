@@ -37,16 +37,6 @@ import Reanimate.Builtin.Documentation
 main :: IO ()
 main = reanimate $ docEnv $ drawBox `parA` adjustDuration (*2) drawCircle
 
-{-# START_FILE stack.yaml #-}
-resolver: lts-17.0
-
-allow-newer: false
-
-packages:
-- .
-
-extra-deps: []
-
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2019{{/year}}
 
